@@ -1,0 +1,287 @@
+<!-- Dashboard HTML Structure -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Maro</title>
+        <link rel="stylesheet" href="style.css">
+        
+
+</head>
+<style>
+
+
+    
+h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+   
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+ color: #3a6cf4;
+ text-decoration: none;
+ font-size: 1.1em;
+ font-weight: 500;
+ padding-left: 30px;
+}
+.navigation a:hover{
+    color: #601cfc;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("background/Hello.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    color: #0a49f6;
+    transform: scale(1.1);
+     
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.paragraph{
+    color: black;
+}
+.contact h2{
+    margin: 10px;
+    color: #3a6cf4;
+}
+.contact .info p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+font-weight: 600;
+font-size: 1.3em;
+}
+.footer-title span{
+color: #3a6cf4;
+}
+@media (max-width: 1023px) {
+    header{
+        padding: 12px 20px; 
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em; ;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 641px) {
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 300px) {
+    body{
+        font-size: 10px;
+
+    }
+}
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">MARO</a>
+        <nav class="navigation">
+            <a href="https://github.com/alfaro-code" title="Github account">Github</a>
+            <a href="https://discord.gg/gUMmj6dQJY" title="discord server">Discord</a>
+            <a href="https://www.youtube.com/@Alfarogaming1" title="Youtube channel">youtube</a>
+            <a href="https://www.tiktok.com/@marogaming297" title="Tiktok account">Tiktok</a>
+            
+        </nav>
+        </header>        
+            <section class="main">
+                <div>
+                    <h2>Hello Im Maro<br><span>Programmer</span></h2>
+                    <h3>Front-End Developer</h3>
+                    <a href="#calll" title="Call Me  if you want a website" class="main-btn">Call Me</a>
+                </div>
+            </section>
+                    <section class="cards" id="cards">
+                            <h2 class="title">Services</h2>
+                                <div class="content">
+                                    <div class="card">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <div class="info" id="services">
+                                    <h3>Web Programming</h3>
+                                    <p class="paragraph">website Programming by html css Front-End im Medium In front end but I can Program a website</p> 
+                                </div>
+                                </div>
+                            </div>
+                    </section>
+
+                <section class="contact" id="calll">
+                    <center><h2>call me if you want website</h2></center>
+                    <div class="content">
+                    <div class="card">
+                    <div class="icons">
+                        <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div class="info">
+                    <h3>Discord</h3>
+                    <p class="paragraph">My Name In Discord : mtmaro_38159</p> 
+                </div>
+                </div>
+            </div>
+                <h2 class="title"></h2>
+                                <div class="content">
+                                    <div class="card">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <div class="info">
+                                    <h3>Email</h3>
+                                    <p class="paragraph">marobusiness58@gmail.com</p> 
+                                </div>
+                                </div>
+                            </div>
+                </section>
+                <footer class="footer">
+                    <p class="footer-title">Copyrights @ <span >Maro</span></p>
+                    <p>Thank you for visiting our website</p>
+                </footer>
+<style>
+
+
+</style>
+
+</html>
